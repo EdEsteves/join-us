@@ -15,8 +15,7 @@ export default {
   name: 'Produto',
   subscriptions: {
     produto: $produtos,
-  },
-  mixins: [produtoService],
+  }
 };
 </script>
 <style lang="scss">
