@@ -1,0 +1,25 @@
+//import das variaveis das cores
+@import './cores';
+//import das variaveis das fontes
+@import './fonts';
+//Import do scss do Header.
+@import './header';
+//Import do scss dos dropdowns menu
+@import './menu';
+//Import do scss do Rodapé
+@import './rodape';
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/gotham-book.otf");
+}
+
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("../fonts/gotham-bold.otf");
+}
+
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
