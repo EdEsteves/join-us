@@ -11,7 +11,7 @@
         .rodape__newsletter{
             position: absolute;
             bottom: 39px;
-            left: 956.7px;
+            left: 50vw;
             width: 293px;
             height: 293px;
             border: 2px solid $cor-cinza;
@@ -21,6 +21,9 @@
             align-items: center;
             justify-content: center;
             z-index: 1;
+            @media screen and (min-width: 1200px) {
+                left: 956.7px;
+            }
             form{
                 display: flex;
                 flex-direction: column;
