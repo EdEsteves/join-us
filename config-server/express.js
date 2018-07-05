@@ -1,14 +1,14 @@
 const express = require('express');
 const consign = require('consign');
 const path = require('path');
-var serveStatic = require('serve-static')
+const serveStatic = require('serve-static')
 
 module.exports = function(){
     const app = express();
 
     app.use(express.urlencoded({extended: true}));
 
-    app.use(express.static(path.join(__dirname, '../dist')));
+    app.use(serveStatic(path.join(__dirname, '../dist')));
 
     app.use(express.json());
 
