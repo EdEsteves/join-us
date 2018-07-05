@@ -8,9 +8,7 @@ module.exports = function(){
 
     app.use(express.urlencoded({extended: true}));
 
-    app.use(serveStatic(path.join(__dirname, '../dist')));
-
-    
+    app.use(express.static(path.join(__dirname, '../dist')));
 
     app.use(express.json());
 
