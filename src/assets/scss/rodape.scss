@@ -112,7 +112,9 @@
                 .rodape__selos{
                     display: flex;
                     flex-direction: row;
-                    margin-left: 30px;
+                    @media screen and (min-width: 1200px) {
+                        margin-left: 30px;
+                    }
                     img{
                         margin: 15px;
                     }
@@ -121,7 +123,11 @@
             .rodape__info{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                width: 50%;
+                margin: 0;
+                padding: 0;
+                @media screen and (min-width: 1200px) {
+                    width: 50%;
+                }
                 div{
                     display: flex;
                     flex-direction: column;
@@ -175,7 +181,7 @@
                 font-size: 12px;
                 font-family: $font-open;
                 @media screen and (min-width: 1200px) {
-                
+                    
                 }
             }
         }
