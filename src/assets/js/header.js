@@ -8,6 +8,7 @@ export default {
       mostrarContainerBolsas: false,
       mostrarContainerAcessorios: false,
       mostrarContainerOff: false,
+      mostrarMenu: false,
     };
   },
   mixins: [Menu],
