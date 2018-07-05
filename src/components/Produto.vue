@@ -19,4 +19,7 @@ export default {
   mixins: [produtoService],
 };
 </script>
+<style lang="scss">
+
+</style>
 
