@@ -1,0 +1,240 @@
+//menu
+@media not all and (max-width: 1080px){
+}
+
+.sapato__dd, .bolsa__dd, .acessorio__dd, .off__dd{
+    min-height: 350px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+}
+
+button:focus {outline:none}
+
+.sapato__dd{
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 0;
+        margin: 0;
+        justify-items: center;
+        li{
+            list-style-type: none;
+            margin-top: 70px;
+            display: flex;
+            align-items: flex-end;
+            a {
+                display: flex;
+                flex-direction: column;
+                
+                span{
+                    color: $cor-main;
+                    align-self: center;            
+                }
+                div {
+                    background-color: $cor-cinza;
+                    align-self: center;
+                }
+                div:hover{
+                    background-color: $cor-main;
+                    }
+                .rasteira__png {
+                    width: 112px;
+                    height: 28px;
+                    mask: url("../img/nav-menu-sapatos/rasteira.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/rasteira.png") no-repeat;
+                    }
+                .sapatilha__png {
+                    width: 112px;
+                    height: 33px;
+                    mask: url("../img/nav-menu-sapatos/sapatilha.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/sapatilha.png") no-repeat;
+                    }
+                .alpargata__png {
+                    width: 115px;
+                    height: 39px;
+                    mask: url("../img/nav-menu-sapatos/alpargata.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/alpargata.png") no-repeat;
+                    }
+                .mocassin__png {
+                    width: 114px;
+                    height: 38px;
+                    mask: url("../img/nav-menu-sapatos/mocassin.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/mocassin.png") no-repeat;
+                }
+                .tenis__png {
+                    width: 115px;
+                    height: 43px;
+                    mask: url("../img/nav-menu-sapatos/tenis.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/tenis.png") no-repeat;
+                }
+                .bota__png {
+                    width: 113px;
+                    height: 83px;
+
+                    mask: url("../img/nav-menu-sapatos/bota.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/bota.png") no-repeat;
+                }
+                .anabela__png {
+                    width: 113px;
+                    height: 71px;
+
+                    mask: url("../img/nav-menu-sapatos/anabela.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/anabela.png") no-repeat;
+                }
+                .plataforma__png {
+                    width: 103px;
+                    height: 87px;
+
+                    mask: url("../img/nav-menu-sapatos/plataforma.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/plataforma.png") no-repeat;
+                }
+                .salto-alto__png {
+                    width: 105px;
+                    height: 74px;
+
+                    mask: url("../img/nav-menu-sapatos/salto-alto.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/salto-alto.png") no-repeat;
+                }
+                .salto-medio__png {
+                    width: 111px;
+                    height: 60px;
+
+                    mask: url("../img/nav-menu-sapatos/salto-medio.png") no-repeat;
+                    -webkit-mask: url("../img/nav-menu-sapatos/salto-medio.png") no-repeat;
+                }
+                
+            }
+        }
+        }
+    }
+
+    .bolsa__dd{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .bolsa__dd__ver-tudo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .img{
+                display:flex;
+                justify-content: center;
+                .img--normal{
+                    position: absolute;
+                    transform: translate(-10px, -4px);
+                }
+                .img--opacity{
+                    position: relative;
+                    opacity: 0.15;
+                    z-index: -1;
+                }
+            }
+            a{  
+                display:flex;
+                width: 160px;
+                height: 42px;
+                text-decoration: none;
+                text-transform: uppercase;
+                align-items: center;
+                justify-content: center;
+                color: $cor-main;
+                border: 2px solid $cor-main;
+                &:hover{
+                    background-color: $cor-main;
+                    color: #fff;
+                }
+            }
+        }
+        .bolsa__dd__lista{
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-left: 2px solid $cor-cinza;
+                margin: 0;
+                li{
+                    list-style-type: none;
+                    padding-bottom: 20px;
+                    a{
+                        text-decoration: none;
+                        color: $cor-main;
+                    }
+                }
+            }
+        }
+        .bolsa__dd__banner{
+            display: flex;
+            align-items: center;
+            img{
+                width: 400px;
+                height: 290px;
+            }
+        }
+    }
+
+    .acessorio__dd{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .acessorio__dd__ver-tudo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .img{
+                display:flex;
+                justify-content: center;
+                .img--normal{
+                    position: absolute;
+                    transform: translate(-10px, -4px);
+                }
+                .img--opacity{
+                    position: relative;
+                    opacity: 0.15;
+                    z-index: -1;
+                }
+            }
+            a{  
+                display:flex;
+                width: 160px;
+                height: 42px;
+                text-decoration: none;
+                text-transform: uppercase;
+                align-items: center;
+                justify-content: center;
+                color: $cor-main;
+                border: 2px solid $cor-main;
+                &:hover{
+                    background-color: $cor-main;
+                    color: #fff;
+                }
+            }
+        }
+        .acessorio__dd__lista{
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-left: 2px solid $cor-cinza;
+                margin: 0;
+                li{
+                    list-style-type: none;
+                    padding-bottom: 20px;
+                    a{
+                        text-decoration: none;
+                        color: $cor-main;
+                    }
+                }
+            }
+        }
+        .acessorio__dd__banner{
+            display: flex;
+            align-items: center;
+            img{
+                width: 400px;
+                height: 290px;
+            }
+        }
+    }

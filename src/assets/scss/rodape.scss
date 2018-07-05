@@ -1,0 +1,155 @@
+.rodape{
+    min-height: 393px;
+    position: relative;
+    overflow: hidden;
+    .line-box{
+        border-top: 2px solid $cor-cinza;
+        min-height: 229px;
+        position: absolute;
+        width: 100%;
+        bottom: 60px;
+        
+        .rodape__newsletter{
+            position: absolute;
+            bottom: 39px;
+            left: 956.7px;
+            min-width: 293px;
+            min-height: 293px;
+            border: 2px solid $cor-cinza;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+    
+                span{
+                    font-family: $font-batman-bold;
+                    text-transform: uppercase;
+                    padding-top: 30px;   
+                }
+                label{
+                    font-family: $font-open;
+                    position: absolute;
+                    top: 60px;
+                    left: 20px;
+                    font-size: 12px;
+                    color: $cor-cinza;
+                }
+                input{
+                    margin: 20px;
+                }
+                input[type=text], [type=email]{
+                    border: none;
+                    border-bottom: 2px solid $cor-cinza;
+                    width: 216px;
+                }
+                input[type=submit]{
+                    background-color: $cor-main;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    cursor: pointer;  
+                    text-transform: uppercase;
+                    width: 110px;
+                    height: 50px;
+                }
+            }
+            
+        }
+        .rodape--aninhado{
+            position: absolute;
+            display: flex;
+            height: 100%;
+            width: 100%;                
+            .rodape__social-selo{
+                display: inline-flex;
+                flex-direction: column;
+                align-items: center;
+                .rodape__social{
+                    margin-top: 50px;
+                    width: 121px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    justify-items: center;
+                    i{
+                        padding-bottom: 30px;
+                        color: $cor-main;
+                        font-size: 25px;
+                        &:hover{
+                            color: $cor-ervilha;
+                        }
+                    }
+                }
+                .rodape__selos{
+                    display: flex;
+                    flex-direction: row;
+                    margin-left: 30px;
+                    img{
+                        margin: 15px;
+                    }
+                }
+            }
+            .rodape__info{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 50%;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    a:first-of-type{
+                        margin-bottom: 15px;
+                    }
+                    a:last-of-type{
+                        margin-top: 15px;
+                    }
+                }
+                div{
+                    span{
+                        font-family: $font-batman-bold;
+                        color: $cor-cinza;
+                        text-transform: uppercase;
+                    }
+                    a{
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+
+//rodapé inferior
+    .rodape__inferior {
+        position: absolute;
+        bottom: 0;
+        background-color: $cor-main;
+        min-height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    .rodape__inferior__endereco {
+        margin-left: 10%;
+        p {
+            margin-bottom: 1px;
+            color:#fff;
+            font-size: 12px;
+            font-family: $font-open;
+        }
+    }
+    .rodape__inferior__logo {        
+        margin-left: 35%;
+      img {
+      }
+    }
+  }
+}
