@@ -1,20 +1,25 @@
 .rodape{
-    min-height: 393px;
     position: relative;
-    overflow: hidden;
+    @media screen and (min-width: 1200px) {
+        max-height: 393px;
+    }
     .line-box{
-        border-top: 2px solid $cor-cinza;
-        min-height: 229px;
-        position: absolute;
+        border-top: 2px solid $cor-cinza;       
         width: 100%;
-        bottom: 60px;
-        
-        .rodape__newsletter{
+        @media screen and (min-width: 1200px) {
+            height: 229px;
             position: absolute;
+            bottom: 60px;
+        }
+        .rodape__newsletter{
+            position: relative;
             bottom: 39px;
-            left: 956.7px;
-            min-width: 293px;
-            min-height: 293px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 293px;
+            height: 293px;
             border: 2px solid $cor-cinza;
             border-radius: 50%;
             background-color: #fff;
@@ -22,6 +27,11 @@
             align-items: center;
             justify-content: center;
             z-index: 1;
+            @media screen and (min-width: 1200px) {
+                left: 956.7px;
+                position: absolute;
+                
+            }
             form{
                 display: flex;
                 flex-direction: column;
@@ -64,20 +74,32 @@
             
         }
         .rodape--aninhado{
-            position: absolute;
+            position: relative;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             height: 100%;
-            width: 100%;                
+            width: 100%;
+            @media screen and (min-width: 1200px) {
+                flex-direction: initial;
+                justify-content: initial;
+                align-items: initial;
+                top: 0;
+            }         
             .rodape__social-selo{
                 display: inline-flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                .rodape__social{
-                    margin-top: 50px;
+                .rodape__social{ 
                     width: 121px;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     justify-items: center;
+                    @media screen and (min-width: 1200px) {
+
+                    }
                     i{
                         padding-bottom: 30px;
                         color: $cor-main;
@@ -90,7 +112,9 @@
                 .rodape__selos{
                     display: flex;
                     flex-direction: row;
-                    margin-left: 30px;
+                    @media screen and (min-width: 1200px) {
+                        margin-left: 30px;
+                    }
                     img{
                         margin: 15px;
                     }
@@ -99,7 +123,11 @@
             .rodape__info{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                width: 50%;
+                margin: 0;
+                padding: 0;
+                @media screen and (min-width: 1200px) {
+                    width: 50%;
+                }
                 div{
                     display: flex;
                     flex-direction: column;
@@ -117,9 +145,17 @@
                         font-family: $font-batman-bold;
                         color: $cor-cinza;
                         text-transform: uppercase;
+                        font-size: 13px;
+                        @media screen and (min-width: 1200px) {
+                            font-size: 16px;
+                        }
                     }
                     a{
+                        font-size: 9px;
                         color: #000;
+                        @media screen and (min-width: 1200px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -129,27 +165,42 @@
 
 //rodapé inferior
     .rodape__inferior {
-        position: absolute;
-        bottom: 0;
+        position: relative;
         background-color: $cor-main;
-        min-height: 60px;
         width: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-
-    .rodape__inferior__endereco {
-        margin-left: 10%;
-        p {
-            margin-bottom: 1px;
-            color:#fff;
-            font-size: 12px;
-            font-family: $font-open;
+        @media screen and (min-width: 1200px) {
+            height: 60px;
+            bottom: 0;
+            flex-direction: initial;
+            justify-content: initial;
         }
-    }
-    .rodape__inferior__logo {        
-        margin-left: 35%;
-      img {
-      }
-    }
+        .rodape__inferior__endereco {
+            
+            @media screen and (min-width: 1200px) {
+                margin-left: 10%;
+            }
+            p {
+                margin-bottom: 1px;
+                color:#fff;
+                font-size: 12px;
+                font-family: $font-open;
+                text-align: center;
+                @media screen and (min-width: 1200px) {
+                    
+                }
+            }
+        }
+        .rodape__inferior__logo {        
+            
+            @media screen and (min-width: 1200px) {
+                margin-left: 35%;
+            }
+            img {
+            }
+        }
   }
 }
