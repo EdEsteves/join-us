@@ -6,25 +6,25 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start2": "npm run dev",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
-    "start": "node server.js",
-    "postinstall": "npm run build"
+    "start": "node server.js"
   },
   "dependencies": {
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1",
     "animate.css": "^3.6.1",
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^1.2.0",
+    "consign": "^0.1.6",
+    "express": "^4.16.3",
     "popper.js": "^1.12.9",
     "rxjs": "^6.2.1",
     "rxjs-compat": "^6.2.1",
+    "vue": "^2.5.2",
     "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
     "vue-rx": "^6.0.0"
   },
   "devDependencies": {

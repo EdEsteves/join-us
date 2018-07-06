@@ -1,5 +1,30 @@
 <template>
     <div id="header">
+
+        <!--Menu media query-->
+        <div class="menu-mobile">
+            <div class="menu-mobile__botao">
+                <img src="../assets/img/static/logo.png" for="Logo da empresa">
+                <i class="fa fa-bars" v-on:click="mostrarMenuMobile"></i>
+            </div>
+            <div class="menu-mobile__signin-signout">
+                <a href="#">Entrar</a>
+                    <span>|</span>
+                <a href="#">Cadastrar-se</a>
+            </div>
+            <transition enter-active-class="animated pulse">
+                <div v-if="mostrarMenu" class="mobile__dd">
+                    <ul>
+                        <li>Sapatos</li>
+                        <li>Bolsas</li>
+                        <li>Acessórios</li>
+                        <li>Off</li>
+                    </ul>
+                </div>
+            </transition>
+        </div>
+        <!--fim Menu media query-->
+
         <b-container class="header">
             <!--header-logo-->
             <b-container class="header__logo">
@@ -10,11 +35,6 @@
                 </b-row>
             </b-container>
             <!--fim header-logo-->
-
-            <!--Menu media query-->
-
-            <!--fim Menu media query-->
-
             <b-container class="header__nav-bar">
                 <b-row>
                     <b-col cols="2">
@@ -57,6 +77,7 @@
                 </b-row>
             </b-container>
         </b-container>
+        <!--Modal-->
         <!--Menu Dropdown-->
         <transition enter-active-class="animated pulse">
             <div v-if="mostrarContainerSapatos"  class="sapato__dd">

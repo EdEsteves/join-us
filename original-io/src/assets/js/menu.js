@@ -27,6 +27,9 @@ const menu = {
         this.mostrarContainerAcessorios = false;
       }
     },
+    mostrarMenuMobile: function abrirMenuMobile(event){
+      this.mostrarMenu = !this.mostrarMenu;
+    }
   },
 };
 
