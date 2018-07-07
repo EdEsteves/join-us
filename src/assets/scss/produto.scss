@@ -1,5 +1,15 @@
 #produto{
     height: 1409px;
+    .home-sapato{
+        margin: 0 40px;
+        span{
+            color: $cor-cinza;
+            &:last-child{
+                font-weight: bold;
+            }
+        }
+        
+    }
     .produto-main{
         padding: 40px;
         display: flex;

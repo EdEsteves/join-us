@@ -1,6 +1,11 @@
 <template>
   <div id="produto">
-    <div class="produto-main"> 
+    <div class="home-sapato">
+        <span>Home</span>
+        <span> / </span>
+        <span>Sapatos</span>
+      </div>
+    <div class="produto-main">
       <div class="box__galeria">
         <div class="box__galeria__thumbnails">
           <div class="video">
