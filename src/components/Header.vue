@@ -77,6 +77,7 @@
                 </b-row>
             </b-container>
         </b-container>
+        <!--Modal-->
         <!--Menu Dropdown-->
         <transition enter-active-class="animated pulse">
             <div v-if="mostrarContainerSapatos"  class="sapato__dd">

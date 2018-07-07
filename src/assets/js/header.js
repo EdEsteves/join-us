@@ -9,6 +9,7 @@ export default {
       mostrarContainerAcessorios: false,
       mostrarContainerOff: false,
       mostrarMenu: false,
+      corClicada: null
     };
   },
   mixins: [Menu],

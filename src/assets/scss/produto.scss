@@ -1,4 +1,188 @@
 #produto{
-    min-height: 1296px;
+    height: 1409px;
+    .produto-main{
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            flex-direction: row;
+        }
+        .box__galeria{
+            display:flex;
+            width: 600px;
+            justify-content: center;
+            align-items: center;
+            @media screen and (min-width: 1200px) {
+                display: inline-flex;
+                flex-direction: row;
+            }
+            .box__galeria__thumbnails{
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 74px;  
+                .video{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    img{
+                        width: 31px;
+                        height: 31px;
+                    }
+                }
+                ul{
+                    padding: 0;
+                    li{
+                        list-style-type: none;
+                        .thumbnail{
+                            width: 74px;
+                            height: 94px;
+                            margin: 4.5px 0;
+                        }
+                    }
+                }
+            }
+            .img-grande{
+                width: 430px;
+                height: 556px;
+                margin: 0 64px;
+            }
+        }
+        .box__produto{
+            border: 2px solid $cor-verde-claro;
+            width: 444px;
+            height: 533px;
+            position: relative;
+            margin: 0 50px;
+            padding: 15px 19px;
+            .box__produto__titulo{
+                position: absolute;
+                width: 100%;
+                h3{
+                    text-transform: uppercase;
+                    font-family: $font-batman-bold;
+                    position: absolute;
+                    top: 21px;
+                }
+                span{
+                    position: absolute;
+                    top: 55px;
+                }
+            }
+            .box__produto__preco{
+                .old{
+                    color:$cor-vermelho-preco;
+                    text-decoration: line-through;
+                    position: absolute;
+                    top: 93px;
+                }
+                .new{
+                    font-weight: bold;
+                    font-family: $font-batman-bold;
+                    color: $cor-cinza-escuro;
+                    position: absolute;
+                    top: 93px;
+                    left: 80px;
+                }
+                .parcela{
+                    font-size: 12px;
+                    color: #7f7f7f;
+                    position: absolute;
+                    top: 110px;
+                }
+            }
 
+            .box__produto__cor{
+                span{
+                    position: absolute;
+                    top: 165px;
+                    span{
+                        position: absolute;
+                        top: 0px;
+                        left: 35px;
+                    }
+                }
+                .cores{
+                    display: flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    position: absolute;
+                    top: 195px;
+                    left:-28px;
+                    li{
+                        margin: 0 7px;
+                    }
+                    .cor-selected{
+                        border-radius: 50%;
+                        border: 5px solid $cor-ervilha;
+                    }
+                }
+            }
+            .box__produto__tamanho{
+                span{
+                    position: absolute;
+                    top: 240px;
+                    span{
+                        position: absolute;
+                        top: 0px;
+                        left: 75px;
+                    }
+                }
+                a{
+                    color: $cor-main;
+                        position: absolute;
+                        top: 240px;
+                        left: 260px;
+                }
+                .tamanhos{
+                    display: flex;
+                    flex-direction: row;
+                    list-style-type: none;
+                    position: absolute;
+                    top: 275px;
+                    left:-28px;
+                    .tamanhoLinkado{
+                        color: $cor-lilas;
+                    }
+                    li{
+                        margin: 0 7px;
+                        border-radius: 50%;
+                        background-color: $cor-cinza-tamanho;
+                        width: 34px;
+                        height: 34px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: $cor-azul-escuro;
+                        cursor: pointer;
+                        margin: 0 2px;
+                    }
+                    .tamanho-selected{
+                        background-color: $cor-ervilha;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .botao-sacola{
+                width: 405px;
+                height: 60px;
+                background-color: $cor-verde;
+                color: #fff;
+                position: absolute;
+                bottom: 113px;
+                border: none;
+                text-transform: uppercase;
+                
+            }
+            .box__produto__descricao{
+                position: absolute;
+                font-size: 15px;
+                line-height: 29px;
+                bottom: 30px;
+            }
+
+        }
+    }
 }
