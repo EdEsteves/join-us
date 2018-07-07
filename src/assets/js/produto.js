@@ -43,7 +43,33 @@ export default {
     mostrarImagem(event){
       const imagemGrande = document.querySelector(".img-grande")
       imagemGrande.src = event.target.src;
-      console.log(event.target.src);
+      let thumb = document.querySelectorAll(".thumbnail");
+      for(let i = 0; i < thumb.length; i++){
+        if(thumb.length > 0){
+        thumb[i].classList.add("sem-destaque");
+        }
+      }
+      event.target.classList.remove("sem-destaque");
+    },
+    mostrarModal(event){
+      const modal = document.querySelector(".modal-compra");
+      const botao = document.querySelector(".botao-sacola");
+      const span = document.querySelector(".close");
+  
+      modal.style.display = "block";
+  
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    },
+    fecharModal(event){
+      const modal = document.querySelector(".modal-compra");
+      modal.style.display = "none";
     }
   }
 };
