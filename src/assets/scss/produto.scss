@@ -46,8 +46,8 @@
                 }
             }
             .img-grande{
-                width: 50%;
-                height: 50%;
+                width: 25%;
+                height: 25%;
                 margin: 40px 64px;
                 @media screen and (min-width: 1200px) {
                     width: 430px;
@@ -58,9 +58,8 @@
         .box__produto{
             border: 2px solid $cor-verde-claro;
             position: relative;
-            width: 444px;
+            width: 410px;
             height: 533px;
-            padding: 15px 19px;
             @media screen and (min-width: 1200px) {
                 width: 444px;
                 height: 533px;
