@@ -46,18 +46,26 @@
                 }
             }
             .img-grande{
-                width: 430px;
-                height: 556px;
-                margin: 0 64px;
+                width: 50%;
+                height: 50%;
+                margin: 40px 64px;
+                @media screen and (min-width: 1200px) {
+                    width: 430px;
+                    height: 556px;
+                }
             }
         }
         .box__produto{
             border: 2px solid $cor-verde-claro;
+            position: relative;
             width: 444px;
             height: 533px;
-            position: relative;
             margin: 0 50px;
             padding: 15px 19px;
+            @media screen and (min-width: 1200px) {
+                width: 444px;
+                height: 533px;
+            }
             .box__produto__titulo{
                 position: absolute;
                 width: 100%;
