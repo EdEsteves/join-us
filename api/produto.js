@@ -23,7 +23,7 @@ api.lista = function(req, res){
             ],
             "cor": [
                 { text: 'magenta', value: 1, url: "../../static/cores/ellipse1-25px.png", codigoCor: "#A9095E"},
-                { text: 'fuscia', value: 2, url: "../../static/cores/ellipse2-25px.png", codigoCor: "#6B85C1"},
+                { text: 'fucsia', value: 2, url: "../../static/cores/ellipse2-25px.png", codigoCor: "#6B85C1"},
                 { text: 'marrom', value: 3, url: "../../static/cores/ellipse3-25px.png", codigoCor: "#A14830"},
                 { text: 'preto', value: 4, url: "../../static/cores/ellipse4-25px.png", codigoCor: "#000000"}
             ]     

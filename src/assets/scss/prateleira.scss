@@ -1,0 +1,118 @@
+#Prateleira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    @media screen and (min-width: 1200px) {
+        height: 850px;
+    }
+    .prateleira__titulo{
+        margin-bottom: 25px;
+        h3{
+            font-family: $font-batman-book;
+            color: $cor-main;
+            text-transform: uppercase;  
+            font-size: 26px;
+        }
+    }
+    .prateleira__galeria{
+        &>ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            @media screen and (min-width: 1200px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            &>li{
+                position: relative;
+                list-style-type: none;
+                margin: 0 15px; 
+                &>img{
+                    width: 80%;
+                    height: 80%;
+                    @media screen and (min-width: 1200px) {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                cursor: pointer;
+                .mais-info{
+                    position: absolute;
+                    top: 0;
+                    
+                    z-index: 1;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    border: 1px solid $cor-main;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: rgba(255, 255, 255, 0.4);
+                    @media screen and (min-width: 1200px) {
+                        right: 0;
+                    }
+                    span{
+                        color: $cor-main;
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+                .under-info{
+                    display: flex;
+                    @media screen and (min-width: 1200px) {
+                        justify-content: center;
+                    }
+                    .preco-prateleira{
+                        position: relative;
+                        left: 0;
+                        
+                        @media screen and (min-width: 1200px) {
+                            margin-right: auto;
+                        }
+                    }
+                    .cores{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        &>ul{
+                            li{
+                                list-style-type: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .prateleira__skip{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        @media screen and (min-width: 1200px) {
+            margin-top: 35px;    
+        }
+        div{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid $cor-azul-escuro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &>i{
+                color: $cor-azul-escuro;
+                font-weight: bold;
+                font-size: 25px;
+            }
+        }
+        span{
+            margin: 0 20px;
+        }
+    }
+}

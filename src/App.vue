@@ -2,6 +2,7 @@
   <div id="app">
     <Header/>
     <Produto/>
+    <Prateleira/>
     <Footer/>
   </div>
 </template>
@@ -11,6 +12,8 @@ import Header from './components/Header';
 
 import Produto from './components/Produto';
 
+import Prateleira from './components/Prateleira';
+
 import Footer from './components/Footer';
 
 export default {
@@ -18,6 +21,7 @@ export default {
   components: {
     Header,
     Produto,
+    Prateleira,
     Footer,
   },
 };

@@ -68,7 +68,8 @@
                                 </b-form-input>
                                 <div class="cart">
                                     <img src="../assets/img/nav-menu/cart.png"
-                                        alt="Carrinho de compras">
+                                        alt="Carrinho de compras"
+                                        v-on:click="mostrarModal">
                                     <span>0</span>
                                 </div>
                             </b-col>
@@ -78,6 +79,89 @@
             </b-container>
         </b-container>
         <!--Modal-->
+         <transition name="fade" enter-active-class="animated pulse">
+             <div v-if="mostrarModalCarrinho" class="modal-carrinho">
+                <div class="modal__header">
+                    <button class="close-cart" v-on:click="fecharModal">X</button>
+                    <div class="modal__header__titulo">
+                        <h4>Sacola</h4>
+                        <span>5 Itens</span>
+                    </div>
+                </div>
+                <div class="linha"></div>
+                <div class="modal__main">
+                    <ul>
+                        <li>
+                            <img src="../assets/img/produtos/sandalias2-64px.png">
+                            <div class="produto">
+                                <span class="nome-produto">Rasteira Tira Dedo</span>
+                                <span class="preco-produto">R$ 49,90</span>
+                            </div>
+                            <button class="menos">-</button>
+                            <span class="contador">0</span>
+                            <button class="mais">+</button>
+                            <a class="x">X</a>
+                        </li>
+                        <li>
+                            <img src="../assets/img/produtos/bolsas1-64px.png">
+                            <div class="produto">
+                                <span class="nome-produto">Rasteira Tira Dedo</span>
+                                <span class="preco-produto">R$ 49,90</span>
+                            </div>
+                            <button class="menos">-</button>
+                            <span class="contador">0</span>
+                            <button class="mais">+</button>
+                            <a class="x">X</a>
+                        </li>
+                        <li>
+                            <img src="../assets/img/produtos/bolsa1-64px.png">
+                            <div class="produto">
+                                <span class="nome-produto">Rasteira Tira Dedo</span>
+                                <span class="preco-produto">R$ 49,90</span>
+                            </div>
+                            <button class="menos">-</button>
+                            <span class="contador">0</span>
+                            <button class="mais">+</button>
+                            <a class="x">X</a>
+                        </li>
+                        <li>
+                            <img src="../assets/img/produtos/sandalias1-64px.png">
+                            <div class="produto">
+                                <span class="nome-produto">Rasteira Tira Dedo</span>
+                                <span class="preco-produto">R$ 49,90</span>
+                            </div>
+                            <button class="menos">-</button>
+                            <span class="contador">0</span>
+                            <button class="mais">+</button>
+                            <a class="x">X</a>
+                        </li>
+                        <li>
+                            <img src="../assets/img/produtos/bolsa1-64px.png">
+                            <div class="produto">
+                                <span class="nome-produto">Rasteira Tira Dedo</span>
+                                <span class="preco-produto">R$ 49,90</span>
+                            </div>
+                            <button class="menos">-</button>
+                            <span class="contador">0</span>
+                            <button class="mais">+</button>
+                            <a class="x">X</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal__footer">
+                    <div class="modal__footer__frete">
+                        <span class="restante">Faltam R$ xx,xx para você <span class="gratis">   Ganhar Frete Grátis</span></span>
+                    </div>
+                    <div class="modal__footer__finalizar">
+                        <div class="preco-total">
+                            <span class="total">Total: R$149,00</span>
+                            <span class="parcela">até 3x de R$ 49,90 sem juros</span>
+                        </div>
+                        <button class="finalizar" v-on:click="fecharModal">Finalizar Compra</button>
+                    </div>
+                </div>
+             </div>
+         </transition>
         <!--Menu Dropdown-->
         <transition enter-active-class="animated pulse">
             <div v-if="mostrarContainerSapatos"  class="sapato__dd">

@@ -1,5 +1,4 @@
 const menu = {
-
   methods: {
     mostrarContainer: function abrirMenu(event) {
       if (event.target.parentNode.id === 'nav__sapatos') {
@@ -29,6 +28,12 @@ const menu = {
     },
     mostrarMenuMobile: function abrirMenuMobile(event){
       this.mostrarMenu = !this.mostrarMenu;
+    },
+    mostrarModal: function abrirModalCarrinho(event){
+      this.mostrarModalCarrinho= !this.mostrarModalCarrinho;
+    },
+    fecharModal: function fecharModalCarrinho(event){
+      this.mostrarModalCarrinho= !this.mostrarModalCarrinho;
     }
   },
 };
