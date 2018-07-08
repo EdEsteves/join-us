@@ -43,12 +43,14 @@
                     img{
                         width: 31px;
                         height: 31px;
+                        cursor: pointer;
                     }
                 }
                 ul{
                     padding: 0;
                     li{
                         list-style-type: none;
+                        cursor: pointer;
                         .thumbnail{
                             width: 74px;
                             height: 94px;
@@ -217,6 +219,7 @@
                 right: 0;
                 margin-left: auto;
                 margin-right: auto;
+                cursor: pointer;
                 @media screen and (min-width: 1200px) {
                     width: 405px;
                     height: 60px;
@@ -281,6 +284,7 @@
                             right: 0;
                             margin-left: auto;
                             margin-right: auto;
+                            cursor: pointer;
                             @media screen and (min-width: 1200px) {
                                 width: 290px;
                                 height: 51px;
