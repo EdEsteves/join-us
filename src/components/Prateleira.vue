@@ -86,7 +86,7 @@
 
 <script>
 export default {
-    name: "Prateleira"
+  name: 'Prateleira',
 };
 </script>
 

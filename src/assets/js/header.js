@@ -3,7 +3,7 @@ import Menu from './menu.js';
 
 export default {
   name: 'Header',
-  data: function (){
+  data() {
     return {
       mostrarContainerSapatos: false,
       mostrarContainerBolsas: false,
@@ -11,7 +11,7 @@ export default {
       mostrarContainerOff: false,
       mostrarModalCarrinho: false,
       mostrarMenu: false,
-      corClicada: null
+      corClicada: null,
     };
   },
   mixins: [Menu],

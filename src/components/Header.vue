@@ -150,7 +150,9 @@
                 </div>
                 <div class="modal__footer">
                     <div class="modal__footer__frete">
-                        <span class="restante">Faltam R$ xx,xx para você <span class="gratis">   Ganhar Frete Grátis</span></span>
+                        <span class="restante">Faltam R$ xx,xx para você
+                            <span class="gratis">   Ganhar Frete Grátis</span>
+                        </span>
                     </div>
                     <div class="modal__footer__finalizar">
                         <div class="preco-total">
