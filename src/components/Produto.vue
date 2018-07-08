@@ -12,10 +12,10 @@
             <span>Vídeo</span>
             <img src="../assets/img/galeria-produto/video.png">
           </div>
-          <i class="fa fa-chevron-up"></i>
+          <i class="fa fa-chevron-up" v-on:click="previous()"></i>
           <ul>
             <li>
-              <img class="thumbnail sem-destaque"
+              <img class="primeiro thumbnail sem-destaque"
                 src="../assets/img/galeria-produto/sandalias1.png"
                 v-on:click="mostrarImagem($event)">
               </li>
@@ -30,12 +30,12 @@
               v-on:click="mostrarImagem($event)">
             </li>
             <li>
-              <img class="thumbnail sem-destaque"
+              <img class="ultimo thumbnail sem-destaque"
               src="../assets/img/galeria-produto/sandalias4.png"
               v-on:click="mostrarImagem($event)">
             </li>
           </ul>
-          <i class="fa fa-chevron-down"></i>
+          <i class="fa fa-chevron-down" v-on:click="next()"></i>
         </div>
         <img class="img-grande">
       </div>

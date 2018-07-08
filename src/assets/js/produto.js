@@ -69,5 +69,25 @@ export default {
       const modal = document.querySelector('.modal-compra');
       modal.style.display = 'none';
     },
+    previous(){
+      let foto = document.querySelector('.thumbnail:not(.sem-destaque');
+      if (foto != null){
+        foto.classList.add('sem-destaque');
+        let proximaFoto = foto.parentElement.previousElementSibling.firstChild;//.classList.remove('sem.destaque');
+        proximaFoto.classList.remove('sem-destaque');
+        const imagemGrande = document.querySelector('.img-grande');
+        imagemGrande.src = proximaFoto.src;
+      }
+    },
+    next(){
+      let foto = document.querySelector('.thumbnail:not(.sem-destaque');
+      if (foto != null){
+        foto.classList.add('sem-destaque');
+        let proximaFoto = foto.parentElement.nextElementSibling.firstChild;//.classList.remove('sem.destaque');
+        proximaFoto.classList.remove('sem-destaque');
+        const imagemGrande = document.querySelector('.img-grande');
+        imagemGrande.src = proximaFoto.src;
+      }
+    }
   },
 };
