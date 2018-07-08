@@ -26,15 +26,15 @@ const menu = {
         this.mostrarContainerAcessorios = false;
       }
     },
-    mostrarMenuMobile: function abrirMenuMobile(event){
+    mostrarMenuMobile: function abrirMenuMobile() {
       this.mostrarMenu = !this.mostrarMenu;
     },
-    mostrarModal: function abrirModalCarrinho(event){
-      this.mostrarModalCarrinho= !this.mostrarModalCarrinho;
+    mostrarModal: function abrirModalCarrinho() {
+      this.mostrarModalCarrinho = !this.mostrarModalCarrinho;
     },
-    fecharModal: function fecharModalCarrinho(event){
-      this.mostrarModalCarrinho= !this.mostrarModalCarrinho;
-    }
+    fecharModal: function fecharModalCarrinho() {
+      this.mostrarModalCarrinho = !this.mostrarModalCarrinho;
+    },
   },
 };
 
