@@ -10,7 +10,7 @@
                 font-weight: bold;
             }
         }
-        
+
     }
     .produto-main{
         padding: 40px;
@@ -20,6 +20,7 @@
         @media screen and (min-width: 1200px) {
             display: flex;
             flex-direction: row;
+            justify-content: center;
         }
         .box__galeria{
             display:flex;
@@ -35,7 +36,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 74px;  
+                width: 74px;
                 .video{
                     display: flex;
                     flex-direction: column;
@@ -80,7 +81,7 @@
                 width: 444px;
                 height: 533px;
                 margin: 0 50px;
-                padding: 0 20px; 
+                padding: 0 20px;
             }
             .box__produto__titulo{
                 position: absolute;
@@ -99,7 +100,7 @@
                     position: absolute;
                     top: 60px;
                     @media screen and (min-width: 1200px) {
-                        top: 55px; 
+                        top: 55px;
                     }
                 }
             }
@@ -173,7 +174,7 @@
                         top: 240px;
                         left: 260px;
                     }
-                    
+
                 }
                 .tamanhos{
                     display: flex;
@@ -184,7 +185,7 @@
                     top: 275px;
                     left:-28px;
                     @media screen and (min-width: 1200px) {
-   
+
                     }
                     .tamanhoLinkado{
                         color: $cor-lilas;
@@ -226,7 +227,7 @@
                     width: 405px;
                     height: 60px;
                 }
-                
+
             }
             .modal-compra{
                 display: none;
@@ -258,7 +259,7 @@
                             color: #000;
                             text-decoration: none;
                             cursor: pointer;
-                        }           
+                        }
                     }
                     .produto-adicionado{
                         display: flex;

@@ -4,7 +4,7 @@
         max-height: 393px;
     }
     .line-box{
-        border-top: 2px solid $cor-cinza;       
+        border-top: 2px solid $cor-cinza;
         width: 100%;
         @media screen and (min-width: 1200px) {
             height: 229px;
@@ -30,18 +30,18 @@
             @media screen and (min-width: 1200px) {
                 left: 956.7px;
                 position: absolute;
-                
+
             }
             form{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 position: relative;
-    
+
                 span{
                     font-family: $font-batman-bold;
                     text-transform: uppercase;
-                    padding-top: 30px;   
+                    padding-top: 30px;
                 }
                 label{
                     font-family: $font-open;
@@ -65,13 +65,13 @@
                     border: none;
                     border-radius: 5px;
                     font-size: 14px;
-                    cursor: pointer;  
+                    cursor: pointer;
                     text-transform: uppercase;
                     width: 110px;
                     height: 50px;
                 }
             }
-            
+
         }
         .rodape--aninhado{
             position: relative;
@@ -86,13 +86,13 @@
                 justify-content: initial;
                 align-items: initial;
                 top: 0;
-            }         
+            }
             .rodape__social-selo{
                 display: inline-flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                .rodape__social{ 
+                .rodape__social{
                     width: 121px;
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
@@ -179,7 +179,7 @@
             justify-content: initial;
         }
         .rodape__inferior__endereco {
-            
+
             @media screen and (min-width: 1200px) {
                 margin-left: 10%;
             }
@@ -190,12 +190,12 @@
                 font-family: $font-open;
                 text-align: center;
                 @media screen and (min-width: 1200px) {
-                    
+                  text-align: left;
                 }
             }
         }
-        .rodape__inferior__logo {        
-            
+        .rodape__inferior__logo {
+
             @media screen and (min-width: 1200px) {
                 margin-left: 35%;
             }
